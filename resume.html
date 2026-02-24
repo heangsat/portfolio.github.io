@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Heang Sat - Resume</title>
+        <!-- Importing modern fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background-color: #f5f5f5;
+                display: flex;
+                justify-content: center;
+                padding: 20px;
+                font-family: "Open Sans", sans-serif;
+            }
+
+            .resume-container {
+                width: 210mm; /* A4 width */
+                min-height: 297mm; /* A4 height */
+                background-color: white;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+                display: flex;
+            }
+
+            /* Sidebar Styles */
+            .sidebar {
+                width: 35%;
+                background-color: #2c3e50; /* Deep blue-gray for better contrast */
+                color: #ecf0f1;
+                padding: 35px 25px;
+                display: flex;
+                flex-direction: column;
+                gap: 35px;
+            }
+
+            .profile-image-container {
+                width: 160px;
+                height: 160px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin: 0 auto 10px;
+                border: 4px solid #3498db;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            }
+
+            .profile-image-container img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            /* Modern Sidebar Typography */
+            .sidebar-section h3 {
+                font-family: "Montserrat", sans-serif;
+                color: #3498db; /* Bright blue accent */
+                font-size: 15px;
+                letter-spacing: 2.5px;
+                margin-bottom: 18px;
+                border-bottom: 2px solid #34495e;
+                padding-bottom: 8px;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+            .contact-item,
+            .education-item,
+            .skill-item,
+            .language-item {
+                margin-bottom: 15px;
+                font-size: 13px;
+                line-height: 1.6;
+                font-family: "Open Sans", sans-serif;
+            }
+
+            .contact-item span {
+                display: block;
+                margin-bottom: 8px;
+                word-break: break-all;
+            }
+
+            .education-date {
+                font-weight: bold;
+                display: block;
+                margin-bottom: 4px;
+                color: #3498db;
+                font-size: 12px;
+            }
+
+            .education-degree {
+                font-weight: 700;
+                font-size: 14px;
+                margin-bottom: 2px;
+                font-family: "Montserrat", sans-serif;
+            }
+
+            .education-school {
+                font-style: italic;
+                color: #bdc3c7;
+                font-size: 13px;
+            }
+
+            .skill-list,
+            .language-list {
+                list-style: none;
+            }
+
+            .skill-list li,
+            .language-list li {
+                margin-bottom: 10px;
+                padding-left: 15px;
+                position: relative;
+            }
+
+            .skill-list li::before {
+                content: "•";
+                color: #3498db;
+                position: absolute;
+                left: 0;
+                font-weight: bold;
+            }
+
+            .skill-list strong {
+                display: block;
+                color: #fff;
+                margin-bottom: 2px;
+                font-size: 13px;
+            }
+
+            /* Main Content Styles */
+            .main-content {
+                width: 65%;
+                padding: 45px;
+                color: #333;
+                background-color: #fff;
+            }
+
+            .header {
+                margin-bottom: 40px;
+                border-left: 8px solid #2c3e50;
+                padding-left: 20px;
+            }
+
+            .header h1 {
+                font-family: "Montserrat", sans-serif;
+                font-size: 48px;
+                color: #2c3e50;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: 700;
+                line-height: 1;
+                margin-bottom: 8px;
+            }
+
+            .header h2 {
+                font-family: "Montserrat", sans-serif;
+                font-size: 18px;
+                color: #3498db;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+
+            .main-section {
+                margin-bottom: 35px;
+            }
+
+            .main-section h3 {
+                font-family: "Montserrat", sans-serif;
+                color: #2c3e50;
+                font-size: 20px;
+                letter-spacing: 1.5px;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+                font-weight: 700;
+                border-bottom: 2px solid #f0f0f0;
+                padding-bottom: 5px;
+            }
+
+            .profile-text {
+                font-size: 14px;
+                line-height: 1.7;
+                color: #555;
+                text-align: justify;
+            }
+
+            .experience-item {
+                margin-bottom: 30px;
+            }
+
+            .exp-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                margin-bottom: 6px;
+            }
+
+            .exp-title {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 700;
+                font-size: 17px;
+                color: #2c3e50;
+            }
+
+            .exp-date {
+                font-size: 12px;
+                color: #7f8c8d;
+                font-weight: 700;
+                background: #f8f9fa;
+                padding: 2px 8px;
+                border-radius: 4px;
+            }
+
+            .exp-company {
+                font-weight: 600;
+                color: #3498db;
+                margin-bottom: 10px;
+                font-size: 14px;
+                display: block;
+                text-transform: uppercase;
+            }
+
+            .exp-list {
+                list-style-type: none;
+            }
+
+            .exp-list li {
+                font-size: 13.5px;
+                line-height: 1.6;
+                margin-bottom: 8px;
+                color: #444;
+                padding-left: 20px;
+                position: relative;
+            }
+
+            .exp-list li::before {
+                content: "▹";
+                color: #3498db;
+                position: absolute;
+                left: 0;
+                font-weight: bold;
+            }
+
+            .reference-section {
+                display: flex;
+                gap: 30px;
+            }
+
+            .ref-item h4 {
+                font-family: "Montserrat", sans-serif;
+                font-size: 15px;
+                margin-bottom: 5px;
+                color: #2c3e50;
+            }
+
+            .ref-item p {
+                font-size: 13px;
+                color: #7f8c8d;
+            }
+
+            /* Control Buttons */
+            .control-buttons {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                display: flex;
+                gap: 10px;
+                z-index: 1000;
+            }
+
+            .btn {
+                padding: 12px 24px;
+                border: none;
+                border-radius: 6px;
+                font-family: "Montserrat", sans-serif;
+                font-size: 14px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            .btn-upload {
+                background-color: #3498db;
+                color: white;
+            }
+
+            .btn-upload:hover {
+                background-color: #2980b9;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+            }
+
+            .btn-export {
+                background-color: #27ae60;
+                color: white;
+            }
+
+            .btn-export:hover {
+                background-color: #229954;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(39, 174, 96, 0.4);
+            }
+
+            #profileImageInput {
+                display: none;
+            }
+
+            @media print {
+                @page {
+                    margin: 0;
+                    size: A4;
+                }
+
+                body {
+                    background-color: white;
+                    padding: 0;
+                    margin: 0;
+                }
+                .resume-container {
+                    box-shadow: none;
+                    width: 100%;
+                    margin: 0;
+                }
+                .sidebar {
+                    -webkit-print-color-adjust: exact;
+                    print-color-adjust: exact;
+                    background-color: #2c3e50 !important;
+                }
+                .control-buttons {
+                    display: none !important;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Control Buttons -->
+        <div class="control-buttons">
+            <input type="file" id="profileImageInput" accept="image/*" />
+            <button
+                class="btn btn-upload"
+                onclick="document.getElementById('profileImageInput').click()"
+            >
+                📷 Upload Photo
+            </button>
+            <button class="btn btn-export" onclick="exportToPDF()">
+                📄 Export to PDF
+            </button>
+        </div>
+
+        <div class="resume-container">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="profile-image-container">
+                    <img src="image/heang-sat.jpg" alt="Heang Sat" />
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Contact</h3>
+                    <div class="contact-item">
+                        <span>📞 +855 99 911 798</span>
+                        <span>✉️ heangsat1523@gmail.com</span>
+                        <span>✈️ Telegram: +855 99 911 798</span>
+                        <span>📍 Phnom Penh, Cambodia</span>
+                        <span>🌐 github.com/heangsat</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Education</h3>
+                    <div class="education-item">
+                        <span class="education-date">2023 - PRESENT</span>
+                        <div class="education-degree">
+                            Bachelor of Computer Science
+                        </div>
+                        <div class="education-school">
+                            University of Cambodia
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Technical Skills</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <strong>Frontend:</strong> React.js, Tailwind CSS,
+                            HTML5/CSS3, JavaScript (ES6+)
+                        </li>
+                        <li>
+                            <strong>Backend:</strong> Node.js, Express, Django
+                            (Python), Spring Boot
+                        </li>
+                        <li>
+                            <strong>Database:</strong> PostgreSQL, MongoDB,
+                            MySQL
+                        </li>
+                        <li>
+                            <strong>Tools:</strong> Git, Docker, REST APIs,
+                            Postman
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Soft Skills</h3>
+                    <ul class="skill-list">
+                        <li>Team Leadership & Management</li>
+                        <li>Agile & Scrum Methodologies</li>
+                        <li>Critical Problem Solving</li>
+                        <li>Technical Communication</li>
+                        <li>Time Management</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Languages</h3>
+                    <ul class="language-list">
+                        <li><strong>Khmer:</strong> Native</li>
+                        <li>
+                            <strong>English:</strong> Professional Working
+                            Proficiency
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="main-content">
+                <div class="header">
+                    <h1>HEANG SAT</h1>
+                    <h2>Full Stack Developer</h2>
+                </div>
+
+                <div class="main-section">
+                    <h3>Profile</h3>
+                    <p class="profile-text">
+                        Passionate Computer Science student and Full Stack
+                        Developer with experience building scalable web
+                        applications. Proven ability to lead academic project
+                        teams to deliver user-centric solutions, from
+                        architecting database schemas to crafting responsive
+                        front-end interfaces. Eager to leverage strong
+                        problem-solving skills and a detail-oriented mindset to
+                        contribute to a dynamic engineering team.
+                    </p>
+                </div>
+
+                <div class="main-section">
+                    <h3>Project Experience</h3>
+
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <span class="exp-title"
+                                >Freelance Full Stack Developer</span
+                            >
+                            <span class="exp-date">JAN 2025 - PRESENT</span>
+                        </div>
+                        <span class="exp-company"
+                            >Self-Employed | Phnom Penh</span
+                        >
+                        <ul class="exp-list">
+                            <li>
+                                <strong>Project Management SaaS:</strong>
+                                Developed a collaborative task management
+                                platform using <strong>Django</strong> and
+                                <strong>React</strong>. Implemented
+                                drag-and-drop kanban boards, real-time updates
+                                for team collaboration, and role-based access
+                                control (RBAC).
+                            </li>
+                            <li>
+                                <strong>E-Commerce Platform:</strong> Built a
+                                full-featured shopping application with
+                                <strong>Node.js</strong> and
+                                <strong>MongoDB</strong>. Integrated Stripe for
+                                secure payments and Redux for complex state
+                                management, resulting in a seamless user
+                                checkout experience.
+                            </li>
+                            <li>
+                                <strong>Performance Optimization:</strong>
+                                Optimized database queries and API response
+                                times across projects, reducing page load speeds
+                                by 40% to enhance user retention.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <span class="exp-title"
+                                >Lead Developer (Academic Capstone)</span
+                            >
+                            <span class="exp-date">JUN 2024 - DEC 2024</span>
+                        </div>
+                        <span class="exp-company"
+                            >University of Cambodia | Phnom Penh</span
+                        >
+                        <ul class="exp-list">
+                            <li>
+                                <strong>Enterprise Dashboard:</strong> Led a
+                                team of 4 students to engineer an analytics
+                                dashboard using <strong>Spring Boot</strong> and
+                                <strong>Vue.js</strong>. Created complex data
+                                visualizations to help simulated clients track
+                                key performance indicators (KPIs).
+                            </li>
+                            <li>
+                                <strong>API Development:</strong> Designed and
+                                documented RESTful APIs using Swagger, ensuring
+                                secure and efficient data communication between
+                                front-end and back-end systems.
+                            </li>
+                            <li>
+                                <strong>Team Leadership:</strong> Managed
+                                project timelines and code reviews using
+                                Git/GitHub, enforcing strict code quality
+                                standards that resulted in a High Distinction
+                                grade for the final submission.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="main-section">
+                    <h3>Reference</h3>
+                    <div class="reference-section">
+                        <div class="ref-item">
+                            <h4>Available upon request</h4>
+                            <p>
+                                To respect privacy, references are provided on
+                                demand.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Handle profile image upload
+            document
+                .getElementById("profileImageInput")
+                .addEventListener("change", function (event) {
+                    const file = event.target.files[0];
+                    if (file && file.type.startsWith("image/")) {
+                        const reader = new FileReader();
+
+                        reader.onload = function (e) {
+                            const imgElement = document.querySelector(
+                                ".profile-image-container img",
+                            );
+                            imgElement.src = e.target.result;
+
+                            // Save to localStorage so it persists on page reload
+                            localStorage.setItem(
+                                "resumeProfileImage",
+                                e.target.result,
+                            );
+                        };
+
+                        reader.readAsDataURL(file);
+                    } else {
+                        alert("Please select a valid image file.");
+                    }
+                });
+
+            // Load saved profile image from localStorage on page load
+            window.addEventListener("DOMContentLoaded", function () {
+                const savedImage = localStorage.getItem("resumeProfileImage");
+                if (savedImage) {
+                    const imgElement = document.querySelector(
+                        ".profile-image-container img",
+                    );
+                    imgElement.src = savedImage;
+                }
+            });
+
+            // Export to PDF function
+            function exportToPDF() {
+                window.print();
+            }
+        </script>
+    </body>
+</html>

@@ -3,11 +3,41 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Heang Sat - Full Stack Web Developer specializing in React, Node.js, Django, and Spring Boot. Building modern web applications in Phnom Penh, Cambodia."
+        />
+        <meta
+            name="keywords"
+            content="Full Stack Developer, Web Developer, React, Node.js, Django, Spring Boot, Cambodia, Phnom Penh"
+        />
+        <meta name="author" content="Heang Sat" />
+
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="Heang Sat - Full Stack Developer" />
+        <meta
+            property="og:description"
+            content="Full Stack Web Developer specializing in modern web technologies"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:url"
+            content="https://heangsat.github.io/portfolio.github.io/"
+        />
+
         <link rel="stylesheet" href="style.css" />
         <title>Heang Sat - Full Stack Developer</title>
     </head>
     <body>
-        <nav id="navbar">
+        <!-- Preloader -->
+        <div id="preloader" class="preloader">
+            <div class="loader"></div>
+        </div>
+
+        <!-- Skip to main content for accessibility -->
+        <a href="#home" class="skip-link">Skip to main content</a>
+
+        <nav id="navbar" role="navigation" aria-label="Main navigation">
             <div class="nav-container">
                 <div class="logo">
                     <div class="logo-icon">H</div>
@@ -30,7 +60,7 @@
                 <div class="hero-content">
                     <div class="hero-text">
                         <h3>HEANG SAT</h3>
-                        <h1>HAY! I'M SAT</h1>
+                        <h1>HEY! I'M SAT</h1>
                         <h2>I'M A WEB DEVELOPER</h2>
                         <p>
                             Hi, I'm Sat! I'm a passionate web development
@@ -44,22 +74,55 @@
                             opportunities.
                         </p>
                         <div class="hero-actions">
-                            <button class="btn-primary">
+                            <button
+                                class="btn-primary"
+                                onclick="window.location.href = '#contact'"
+                            >
                                 GET IN TOUCH
                                 <span>→</span>
                             </button>
-                            <div class="social-links">
-                                <a
-                                    href="https://github.com/heangsat"
-                                    target="_blank"
-                                    class="social-icon github"
-                                    style="text-decoration: none; color: white"
-                                    >GH</a
-                                >
-                                <div class="social-icon facebook">f</div>
-                                <div class="social-icon instagram">📷</div>
-                                <div class="social-icon linkedin">in</div>
-                            </div>
+                            <a
+                                href="resume.html"
+                                target="_blank"
+                                class="btn-secondary"
+                            >
+                                VIEW RESUME
+                                <span>📄</span>
+                            </a>
+                        </div>
+                        <div class="social-links">
+                            <a
+                                href="https://github.com/heangsat"
+                                target="_blank"
+                                class="social-icon github"
+                                title="GitHub"
+                                aria-label="GitHub Profile"
+                                >GH</a
+                            >
+                            <a
+                                href="https://www.facebook.com/profile.php?id=61571221287506"
+                                target="_blank"
+                                class="social-icon facebook"
+                                title="Facebook"
+                                aria-label="Facebook Profile"
+                                >f</a
+                            >
+                            <a
+                                href="https://t.me/+85599911798"
+                                target="_blank"
+                                class="social-icon telegram"
+                                title="Telegram"
+                                aria-label="Telegram Contact"
+                                >✈️</a
+                            >
+                            <a
+                                href="https://www.linkedin.com/in/heang-sat"
+                                target="_blank"
+                                class="social-icon linkedin"
+                                title="LinkedIn"
+                                aria-label="LinkedIn Profile"
+                                >in</a
+                            >
                         </div>
                     </div>
                     <div class="hero-image">
@@ -289,14 +352,49 @@
                                 <div class="contact-icon">📧</div>
                                 <div>
                                     <h4>Email</h4>
-                                    <p>heangsat1523@gmail.com</p>
+                                    <p>
+                                        <a
+                                            href="mailto:heangsat1523@gmail.com"
+                                            style="
+                                                color: #9ca3af;
+                                                text-decoration: none;
+                                            "
+                                            >heangsat1523@gmail.com</a
+                                        >
+                                    </p>
                                 </div>
                             </div>
                             <div class="contact-item">
                                 <div class="contact-icon">📱</div>
                                 <div>
+                                    <h4>Telegram</h4>
+                                    <p>
+                                        <a
+                                            href="https://t.me/+85599911798"
+                                            target="_blank"
+                                            style="
+                                                color: #9ca3af;
+                                                text-decoration: none;
+                                            "
+                                            >+855 99 911 798</a
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📞</div>
+                                <div>
                                     <h4>Phone</h4>
-                                    <p>+(855) 999-117-98</p>
+                                    <p>
+                                        <a
+                                            href="tel:+85599911798"
+                                            style="
+                                                color: #9ca3af;
+                                                text-decoration: none;
+                                            "
+                                            >+855 99 911 798</a
+                                        >
+                                    </p>
                                 </div>
                             </div>
                             <div class="contact-item">
@@ -313,28 +411,39 @@
                                 href="https://github.com/heangsat"
                                 target="_blank"
                                 class="social-link-footer github"
+                                title="GitHub"
                                 >GH</a
                             >
-                            <a href="#" class="social-link-footer facebook"
+                            <a
+                                href="https://www.facebook.com/profile.php?id=61571221287506"
+                                target="_blank"
+                                class="social-link-footer facebook"
+                                title="Facebook"
                                 >f</a
                             >
-                            <a href="#" class="social-link-footer instagram"
-                                >📷</a
+                            <a
+                                href="https://t.me/+85599911798"
+                                target="_blank"
+                                class="social-link-footer telegram"
+                                title="Telegram"
+                                >✈️</a
                             >
-                            <a href="#" class="social-link-footer linkedin"
+                            <a
+                                href="https://www.linkedin.com/in/heang-sat"
+                                target="_blank"
+                                class="social-link-footer linkedin"
+                                title="LinkedIn"
                                 >in</a
-                            >
-                            <a href="#" class="social-link-footer twitter"
-                                >🐦</a
                             >
                         </div>
                     </div>
 
                     <div class="contact-form-wrapper">
-                        <form class="contact-form">
+                        <form class="contact-form" id="contactForm">
                             <div class="form-group">
                                 <input
                                     type="text"
+                                    name="name"
                                     placeholder="Your Name"
                                     required
                                 />
@@ -342,15 +451,21 @@
                             <div class="form-group">
                                 <input
                                     type="email"
+                                    name="email"
                                     placeholder="Your Email"
                                     required
                                 />
                             </div>
                             <div class="form-group">
-                                <input type="text" placeholder="Subject" />
+                                <input
+                                    type="text"
+                                    name="subject"
+                                    placeholder="Subject"
+                                />
                             </div>
                             <div class="form-group">
                                 <textarea
+                                    name="message"
                                     placeholder="Your Message"
                                     rows="5"
                                     required
@@ -406,8 +521,15 @@
                                     >
                                 </li>
                                 <li>
-                                    <a href="tel:+(855)99911798"
-                                        >+(855) 999-117-98</a
+                                    <a href="tel:+85599911798"
+                                        >+855 99 911 798</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://t.me/+85599911798"
+                                        target="_blank"
+                                        >Telegram: @heangsat</a
                                     >
                                 </li>
                                 <li>Phnom Penh, Cambodia</li>
@@ -424,6 +546,11 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Back to Top Button -->
+        <button id="backToTop" class="back-to-top" title="Back to top">
+            ↑
+        </button>
 
         <script src="script.js"></script>
     </body>

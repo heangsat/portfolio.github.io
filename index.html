@@ -1,303 +1,431 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Heang-sat</title>
-</head>
-<body>
-    <nav id="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <div class="logo-icon">H</div>
-                <span>SAT</span>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Heang Sat - Full Stack Developer</title>
+    </head>
+    <body>
+        <nav id="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <div class="logo-icon">H</div>
+                    <span>SAT</span>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="active">HOME</a></li>
+                    <li><a href="#about">ABOUT ME</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#services">EXPERTISE</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+                <button class="cta-btn nav-cta">LET'S TALK</button>
+                <button class="menu-toggle" id="menuToggle">☰</button>
             </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home" class="active">HOME</a></li>
-                <li><a href="#about">ABOUT ME</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-            <button class="cta-btn nav-cta">LET'S TALK</button>
-            <button class="menu-toggle" id="menuToggle">☰</button>
-        </div>
-    </nav>
+        </nav>
 
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h3>HEANG SAT</h3>
-                    <h1>HAY! I'M SAT</h1>
-                    <h2>I'M A WEB DEVELOPER</h2>
-                    <p>Hi, I'm Sat! I'm a passionate web development student with hands-on experience building full-stack applications. I've completed multiple projects using HTML, CSS, JavaScript, React.js, Express.js, Spring Boot, and Django – from responsive front-end interfaces to robust back-end systems. I'm eager to apply my skills in real-world scenarios and continue learning through internships or entry-level opportunities..</p>
-                    <div class="hero-actions">
-                        <button class="btn-primary">
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h3>HEANG SAT</h3>
+                        <h1>HAY! I'M SAT</h1>
+                        <h2>I'M A WEB DEVELOPER</h2>
+                        <p>
+                            Hi, I'm Sat! I'm a passionate web development
+                            student with hands-on experience building full-stack
+                            applications. I've completed multiple projects using
+                            HTML, CSS, JavaScript, React.js, Express.js, Spring
+                            Boot, and Django – from responsive front-end
+                            interfaces to robust back-end systems. I'm eager to
+                            apply my skills in real-world scenarios and continue
+                            learning through internships or entry-level
+                            opportunities.
+                        </p>
+                        <div class="hero-actions">
+                            <button class="btn-primary">
+                                GET IN TOUCH
+                                <span>→</span>
+                            </button>
+                            <div class="social-links">
+                                <a
+                                    href="https://github.com/heangsat"
+                                    target="_blank"
+                                    class="social-icon github"
+                                    style="text-decoration: none; color: white"
+                                    >GH</a
+                                >
+                                <div class="social-icon facebook">f</div>
+                                <div class="social-icon instagram">📷</div>
+                                <div class="social-icon linkedin">in</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="image/heang-sat.jpg" alt="Heang Sat" />
+                    </div>
+                </div>
+                <div class="logo-strip">
+                    <span class="tech-item">REACT.JS</span>
+                    <span class="tech-item">NODE.JS</span>
+                    <span class="tech-item">PYTHON</span>
+                    <span class="tech-item">DJANGO</span>
+                    <span class="tech-item">SPRING BOOT</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="circle-decoration circle-left"></div>
+                        <div class="circle-decoration circle-right"></div>
+                        <div class="about-image-wrapper">
+                            <img src="image/heang-sat.jpg" alt="About SAT" />
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h3>ABOUT ME</h3>
+                        <h2>
+                            I'M READY FOR <span>WEB DEVELOPMENT</span> PROJECTS
+                        </h2>
+                        <p>
+                            My journey into web development started with a
+                            curiosity for how things work on the internet, which
+                            quickly turned into a passion for building them. I
+                            thrive on solving complex problems and turning ideas
+                            into efficient, scalable code. Whether it's
+                            architecting a database schema or polishing a user
+                            interface, I bring dedication and a detail-oriented
+                            mindset to every project. I am constantly learning
+                            and adapting to new technologies to build better
+                            digital experiences.
+                        </p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <h4>10+</h4>
+                                <p>Personal Projects Completed</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>7+</h4>
+                                <p>Modern Tech Stack</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>4+</h4>
+                                <p>Full-Stack Applications Built</p>
+                            </div>
+                        </div>
+                        <button
+                            class="btn-primary"
+                            onclick="window.location.href = '#contact'"
+                        >
                             GET IN TOUCH
                             <span>→</span>
                         </button>
-                        <div class="social-links">
-                            <div class="social-icon facebook">f</div>
-                            <div class="social-icon instagram">📷</div>
-                            <div class="social-icon linkedin">in</div>
-                        </div>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <img src="image/heang-sat.jpg" alt="heang-sat.jpg">
-                </div>
             </div>
-            <div class="logo-strip">
-                <span class="tech-item">REACT.JS</span>
-                <span class="tech-item">NODE.JS</span>
-                <span class="tech-item">PYTHON</span>
-                <span class="tech-item">DJANGO</span>
-                <span class="tech-item">SPRING BOOT</span>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-image">
-                    <div class="circle-decoration circle-left"></div>
-                    <div class="circle-decoration circle-right"></div>
-                    <div class="about-image-wrapper">
-                        <img src="image/heang-sat.jpg" alt="About SAT">
-                    </div>
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h3>MY WORK</h3>
+                    <h2>RECENT PROJECTS</h2>
                 </div>
-                <div class="about-text">
-                    <h3>ABOUT US</h3>
-                    <h2>I'M READY FOR <span>WEB DEVELOPMENT</span> PROJECT</h2>
-                    <p>My journey into web development started with a curiosity for how things work on the internet, which quickly turned into a passion for building them. I thrive on solving complex problems and turning ideas into efficient, scalable code. Whether it's architecting a database schema or polishing a user interface, I bring dedication and a detail-oriented mindset to every project. I am constantly learning and adapting to new technologies to build better digital experiences.</p>
-                    <div class="stats">
-                        <div class="stat-item">
-                            <h4>10+</h4>
-                            <p>Personal Projects Completed</p>
-                        </div>
-                        <div class="stat-item">
-                            <h4>7+</h4>
-                            <p>Modern Tech Stack</p>
-                        </div>
-                        <div class="stat-item">
-                            <h4>4+</h4>
-                            <p>Full-Stack Applications Built</p>
-                        </div>
-                    </div>
-                    <button class="btn-primary">
-                        GET IN TOUCH
-                        <span>→</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="projects" id="projects">
-        <div class="container">
-            <div class="section-header">
-                <h3>MY WORK</h3>
-                <h2>RECENT PROJECT</h2>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop" alt="Project 1">
-                    <div class="project-info">
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MongoDB</span>
-                        </div>
-                        <h3>E-Commerce Platform</h3>
-                        <p>Full-featured shopping experience with Stripe payments, Redux state management, and admin dashboard.</p>
-                        <div class="project-arrow"><a href="https://frontend-3s97waiqn-heangsats-projects.vercel.app/">→ </a></div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="Project 2">
-                    <div class="project-info">
-                        <div class="project-tags">
-                            <span class="tag">Django</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">Tailwind</span>
-                        </div>
-                        <h3>Secure Banking App</h3>
-                        <p>Fintech application featuring real-time transaction tracking, secure auth, and data visualization.</p>
-                        <div class="project-arrow"><a href="#">→ </a></div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop" alt="Project 3">
-                    <div class="project-info">
-                        <div class="project-tags">
-                            <span class="tag">Spring Boot</span>
-                            <span class="tag">React</span>
-                            <span class="tag">MySQL</span>
-                        </div>
-                        <h3>SaaS Analytics Dashboard</h3>
-                        <p>Enterprise-grade dashboard with complex data charting, reporting tools, and user management.</p>
-                        <div class="project-arrow"><a href="#">→ </a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-            </div>
-        </div>
-    </section>
-
-    <section class="services" id="services">
-        <div class="container">
-            <div class="section-header">
-                <h3>EXPERTISE</h3>
-                <h2>TECHNICAL <span style="color: #3b82f6;">CAPABILITIES</span></h2>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?w=400&h=300&fit=crop" alt="Backend Development">
-                    <div class="service-overlay">
-                        <h3>BACKEND DEVELOPMENT</h3>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=400&h=300&fit=crop" alt="Frontend Architecture">
-                    <div class="service-overlay">
-                        <h3>FRONTEND ARCHITECTURE</h3>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=400&h=300&fit=crop" alt="Database Design">
-                    <div class="service-overlay">
-                        <h3>DATABASE DESIGN</h3>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="API Integration">
-                    <div class="service-overlay">
-                        <h3>API INTEGRATION</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>LET'S TALK</h3>
-                    <h2>LET'S CONNECT</h2>
-                    <p>I'm excited to hear from you! Whether you have questions about my projects, want to collaborate on something small, or know of internship/job opportunities, feel free to reach out.</p>
-                    
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">📧</div>
-                            <div>
-                                <h4>Email</h4>
-                                <p>heangsat1523@gmail.com</p>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=600&fit=crop"
+                            alt="E-Commerce Platform"
+                        />
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
                             </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">📱</div>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>+(855) 999-117-98</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">📍</div>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Pnom Penh</p>
+                            <h3>E-Commerce Platform</h3>
+                            <p>
+                                Full-featured shopping experience with Stripe
+                                payments, Redux state management, and admin
+                                dashboard.
+                            </p>
+                            <div class="project-arrow">
+                                <a
+                                    href="https://frontend-3s97waiqn-heangsats-projects.vercel.app/"
+                                    target="_blank"
+                                    >→</a
+                                >
                             </div>
                         </div>
                     </div>
-
-                    <div class="social-links-footer">
-                        <a href="#" class="social-link-footer facebook">f</a>
-                        <a href="#" class="social-link-footer instagram">📷</a>
-                        <a href="#" class="social-link-footer linkedin">in</a>
-                        <a href="#" class="social-link-footer twitter">🐦</a>
+                    <div class="project-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+                            alt="Mobile Banking App"
+                        />
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">Django</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">Tailwind</span>
+                            </div>
+                            <h3>Secure Banking App</h3>
+                            <p>
+                                Fintech application featuring real-time
+                                transaction tracking, secure auth, and data
+                                visualization. (Repo link below)
+                            </p>
+                            <div class="project-arrow">
+                                <a
+                                    href="https://github.com/heangsat"
+                                    target="_blank"
+                                    >→</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop"
+                            alt="SaaS Dashboard"
+                        />
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">Spring Boot</span>
+                                <span class="tag">Vuejs</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                            <h3>SaaS Analytics Dashboard</h3>
+                            <p>
+                                Enterprise-grade dashboard with complex data
+                                charting, reporting tools, and user management.
+                                (Repo link below)
+                            </p>
+                            <div class="project-arrow">
+                                <a
+                                    href="https://github.com/heangsat"
+                                    target="_blank"
+                                    >→</a
+                                >
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="contact-form-wrapper">
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Subject">
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn-submit">
-                            Send Message
-                            <span>→</span>
-                        </button>
-                    </form>
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="logo">
-                        <div class="logo-icon">H</div>
-                        <span>HEANG SAT</span>
-                    </div>
-                    <p>Full-stack web developer | Student & Project Builder</p>
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h3>EXPERTISE</h3>
+                    <h2>
+                        TECHNICAL
+                        <span style="color: #3b82f6">CAPABILITIES</span>
+                    </h2>
                 </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Quick Links</h4>
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#services">Services</a></li>
-                        </ul>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?w=400&h=300&fit=crop"
+                            alt="Backend Development"
+                        />
+                        <div class="service-overlay">
+                            <h3>BACKEND DEVELOPMENT</h3>
+                        </div>
                     </div>
-                    <div class="footer-column">
-                        <h4>Expertise</h4>
-                        <ul>
-                            <li><a href="#">Frontend Dev</a></li>
-                            <li><a href="#">Backend Dev</a></li>
-                            <li><a href="#">Database Design</a></li>
-                            <li><a href="#">API Integration</a></li>
-                        </ul>
+                    <div class="service-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=400&h=300&fit=crop"
+                            alt="Frontend Architecture"
+                        />
+                        <div class="service-overlay">
+                            <h3>FRONTEND ARCHITECTURE</h3>
+                        </div>
                     </div>
-                    <div class="footer-column">
-                        <h4>Contact</h4>
-                        <ul>
-                            <li><a href="mailto:heangsat1523@gmail.com">heangsat1523@gmail.com</a></li>
-                            <li><a href="tel:+(855)99911798">+(855) 999-117-98</a></li>
-                            <li>Phnom Penh, Cambodia</li>
-                        </ul>
+                    <div class="service-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=400&h=300&fit=crop"
+                            alt="Database Design"
+                        />
+                        <div class="service-overlay">
+                            <h3>DATABASE DESIGN</h3>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img
+                            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop"
+                            alt="API Integration"
+                        />
+                        <div class="service-overlay">
+                            <h3>API INTEGRATION</h3>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>© 2026 Heang Sat. All rights reserved.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>LET'S TALK</h3>
+                        <h2>LET'S CONNECT</h2>
+                        <p>
+                            I'm excited to hear from you! Whether you have
+                            questions about my projects, want to collaborate on
+                            something small, or know of internship/job
+                            opportunities, feel free to reach out.
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>heangsat1523@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📱</div>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+(855) 999-117-98</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Phnom Penh, Cambodia</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links-footer">
+                            <a
+                                href="https://github.com/heangsat"
+                                target="_blank"
+                                class="social-link-footer github"
+                                >GH</a
+                            >
+                            <a href="#" class="social-link-footer facebook"
+                                >f</a
+                            >
+                            <a href="#" class="social-link-footer instagram"
+                                >📷</a
+                            >
+                            <a href="#" class="social-link-footer linkedin"
+                                >in</a
+                            >
+                            <a href="#" class="social-link-footer twitter"
+                                >🐦</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    placeholder="Your Name"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    type="email"
+                                    placeholder="Your Email"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Subject" />
+                            </div>
+                            <div class="form-group">
+                                <textarea
+                                    placeholder="Your Message"
+                                    rows="5"
+                                    required
+                                ></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">
+                                Send Message
+                                <span>→</span>
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </section>
 
-   <script src="script.js"></script>
-</body>
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <div class="logo">
+                            <div class="logo-icon">H</div>
+                            <span>HEANG SAT</span>
+                        </div>
+                        <p>
+                            Full-stack web developer | Student & Project Builder
+                        </p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#services">Services</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Expertise</h4>
+                            <ul>
+                                <li><a href="#">Frontend Dev</a></li>
+                                <li><a href="#">Backend Dev</a></li>
+                                <li><a href="#">Database Design</a></li>
+                                <li><a href="#">API Integration</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Contact</h4>
+                            <ul>
+                                <li>
+                                    <a href="mailto:heangsat1523@gmail.com"
+                                        >heangsat1523@gmail.com</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="tel:+(855)99911798"
+                                        >+(855) 999-117-98</a
+                                    >
+                                </li>
+                                <li>Phnom Penh, Cambodia</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2026 Heang Sat. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
 </html>

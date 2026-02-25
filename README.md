@@ -43,10 +43,10 @@ A modern, responsive portfolio website showcasing my work as a Full Stack Develo
 
 ## 🚀 Featured Projects
 
-### Task Management & Team Collaboration Platform
+### Hospital Management System
 
-- **Stack:** Django + React + PostgreSQL
-- **Features:** Interactive kanban boards, real-time notifications, team member assignment, task priority levels, deadline tracking
+- **Stack:** Spring Boot + Vue.js + MySQL
+- **Features:** Patient registration and tracking, appointment scheduling, medical records management, doctor-patient assignment, prescription generation, real-time billing system
 - **Status:** In Development (Jan 2025 - Present)
 
 ### Student Management System

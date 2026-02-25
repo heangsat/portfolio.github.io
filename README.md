@@ -3,9 +3,11 @@
 A modern, responsive portfolio website showcasing my work as a Full Stack Developer.
 
 ## 🌐 Live Demo
+
 [https://heangsat.github.io/portfolio.github.io/](https://heangsat.github.io/portfolio.github.io/)
 
 ## 📱 Contact Information
+
 - **Email:** heangsat1523@gmail.com
 - **Telegram:** [+855 99 911 798](https://t.me/+85599911798)
 - **Phone:** +855 99 911 798
@@ -16,6 +18,7 @@ A modern, responsive portfolio website showcasing my work as a Full Stack Develo
 ## ✨ Features
 
 ### Main Portfolio (index.html)
+
 - **Responsive Design:** Works seamlessly on desktop, tablet, and mobile devices
 - **Smooth Animations:** Scroll-triggered reveal animations for engaging user experience
 - **Interactive Navigation:** Active section highlighting and smooth scrolling
@@ -25,6 +28,7 @@ A modern, responsive portfolio website showcasing my work as a Full Stack Develo
 - **Back to Top Button:** Easy navigation for long-scrolling pages
 
 ### Resume Page (resume.html)
+
 - **Profile Photo Upload:** Upload and preview custom profile pictures (saved in browser)
 - **PDF Export:** One-click export to PDF for sharing and printing
 - **Professional Layout:** Clean, ATS-friendly resume design
@@ -36,6 +40,14 @@ A modern, responsive portfolio website showcasing my work as a Full Stack Develo
 - **Design:** Custom CSS with animations and transitions
 - **Responsive:** Mobile-first design approach
 - **Performance:** Optimized images and smooth scrolling
+
+## 🚀 Featured Projects
+
+### Task Management & Team Collaboration Platform
+
+- **Stack:** Django + React + PostgreSQL
+- **Features:** Interactive kanban boards, real-time notifications, team member assignment, task priority levels, deadline tracking
+- **Status:** In Development (Jan 2025 - Present)
 
 ## 📂 Project Structure
 
@@ -61,6 +73,7 @@ portfolio/
 ## 💡 Features Implemented
 
 ### Interactivity
+
 - Navbar changes on scroll
 - Mobile-responsive hamburger menu
 - Smooth scroll to sections
@@ -69,6 +82,7 @@ portfolio/
 - Functional contact form
 
 ### Resume Features
+
 - Upload custom profile picture
 - Export to PDF (browser print)
 - Professional formatting
@@ -85,6 +99,7 @@ portfolio/
 ## 📧 Contact Form
 
 The contact form uses a mailto: link to open the user's default email client with pre-filled information. For production, consider integrating with:
+
 - FormSpree
 - EmailJS
 - Backend API with nodemailer
@@ -105,6 +120,7 @@ This portfolio is personal property. Feel free to use the code structure as insp
 ## 👤 About Me
 
 I'm a passionate Full Stack Developer currently studying Computer Science at the University of Cambodia. I specialize in:
+
 - **Frontend:** React.js, Tailwind CSS, HTML5/CSS3, JavaScript
 - **Backend:** Node.js, Express, Django, Spring Boot
 - **Database:** PostgreSQL, MongoDB, MySQL

@@ -49,6 +49,13 @@ A modern, responsive portfolio website showcasing my work as a Full Stack Develo
 - **Features:** Interactive kanban boards, real-time notifications, team member assignment, task priority levels, deadline tracking
 - **Status:** In Development (Jan 2025 - Present)
 
+### Student Management System
+
+- **Stack:** Spring Boot + Vue.js + MySQL
+- **Features:** Student enrollment, grade tracking, attendance management, progress reports, admin dashboard
+- **Status:** Completed (Jun 2024 - Dec 2024)
+- **Team:** Lead Developer, managed 4-person team
+
 ## 📂 Project Structure
 
 ```
